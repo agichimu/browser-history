@@ -27,21 +27,39 @@ class BrowserHistory {
 }
 
 $browserHistory = new BrowserHistory("leetcode.com");
-$browserHistory->visit("google.com");
-$browserHistory->visit("facebook.com");
-$browserHistory->visit("youtube.com");
-$result = [
-    $browserHistory->visit(null),
-    $browserHistory->back(1),
-    $browserHistory->back(1),
-    $browserHistory->forward(1),
-    $browserHistory->visit("linkedin.com"),
-    $browserHistory->forward(2),
-    $browserHistory->back(2),
-    $browserHistory->back(7)
-];
 
-foreach ($result as $value) {
-    echo $value . "\n";
+echo "Browser History!\n";
+while (true) {
+    echo "Enter an action (visit, back, forward, exit): ";
+    $action = trim(fgets(STDIN));
+
+    if ($action === "exit") {
+        break;
+    }
+
+    switch ($action) {
+        case "visit":
+            echo "Enter the URL to visit: ";
+            $url = trim(fgets(STDIN));
+            $browserHistory->visit($url);
+            break;
+        case "back":
+            echo "Enter the number of steps to go back: ";
+            $steps = trim(fgets(STDIN));
+            $result = $browserHistory->back((int)$steps);
+            echo "You are now at: $result\n";
+            break;
+        case "forward":
+            echo "Enter the number of steps to go forward: ";
+            $steps = trim(fgets(STDIN));
+            $result = $browserHistory->forward((int)$steps);
+            echo "You are now at: $result\n";
+            break;
+        default:
+            echo "Invalid action. Please try again.\n";
+            break;
+    }
 }
+
+echo "Exiting the Browser History.\n";
 ?>
