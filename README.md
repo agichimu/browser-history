@@ -6,4 +6,6 @@
 1. clone the repository to your desired location in your machine.
 2. once cloned the project folder should be copied to \"xampp"\htdocs.
 
+ input
+
 ![Screenshot from 2023-07-12 09-47-57.png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-07-12%2009-47-57.png)
