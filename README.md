@@ -8,4 +8,4 @@
 
  input
 
-![Screenshot from 2023-07-12 09-47-57.png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-07-12%2009-47-57.png)
+![Screenshot from 2023-07-12 09-47-57](https://github.com/agichimu/browser-history/assets/97959452/460bca2b-7226-4082-ad29-7f1ad33c21d6)
